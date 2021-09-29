@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         getAppDataBtn.setOnClickListener {
             val retrofit = Retrofit.Builder()
-                .baseUrl("http://10.0.2.2/")
+                .baseUrl("https://www.google.se/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
             val appService = retrofit.create(AppService::class.java)
